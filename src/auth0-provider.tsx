@@ -11,7 +11,7 @@ import {
   GetTokenWithPopupOptions,
   GetTokenSilentlyOptions,
   GetIdTokenClaimsOptions,
-} from '@auth0/auth0-spa-js';
+} from '@hosamshahin/auth0-spa-js';
 import Auth0Context, { RedirectLoginOptions } from './auth0-context';
 import { hasAuthParams, loginError, tokenError } from './utils';
 import { reducer } from './reducer';

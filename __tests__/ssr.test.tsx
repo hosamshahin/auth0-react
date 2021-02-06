@@ -5,7 +5,7 @@ import React from 'react';
 import ReactDOMServer from 'react-dom/server';
 import { Auth0Provider, Auth0Context } from '../src';
 
-jest.unmock('@auth0/auth0-spa-js');
+jest.unmock('@hosamshahin/auth0-spa-js');
 
 describe('In a Node SSR environment', () => {
   it('auth state is initialised', async () => {

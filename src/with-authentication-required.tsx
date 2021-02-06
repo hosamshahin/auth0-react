@@ -100,6 +100,6 @@ const withAuthenticationRequired = <P extends object>(
 
     return isAuthenticated ? <Component {...props} /> : onRedirecting();
   };
-}
+};
 
 export default withAuthenticationRequired;

@@ -68,6 +68,10 @@ export interface Auth0ProviderOptions {
    */
   clientId: string;
   /**
+   * The back_channel_url used to get the tokens
+   */
+  back_channel_url?: string;
+  /**
    * The default URL where Auth0 will redirect your browser to with
    * the authentication result. It must be whitelisted in
    * the "Allowed Callback URLs" field in your Auth0 Application's
@@ -147,12 +151,13 @@ declare const __VERSION__: string;
 const toAuth0ClientOptions = (
   opts: Auth0ProviderOptions
 ): Auth0ClientOptions => {
-  const { clientId, redirectUri, maxAge, ...validOpts } = opts;
+  const { clientId, redirectUri, maxAge, backChannelUrl, ...validOpts } = opts;
   return {
     ...validOpts,
     client_id: clientId,
     redirect_uri: redirectUri,
     max_age: maxAge,
+    back_channel_url: backChannelUrl,
     auth0Client: {
       name: 'auth0-react',
       version: __VERSION__,

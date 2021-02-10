@@ -1,7 +1,7 @@
 {
   "author": "Auth0",
   "name": "@hosamshahin/auth0-react",
-  "version": "1.2.0-1",
+  "version": "1.2.0-10",
   "description": "Auth0 SDK for React Single Page Applications (SPA)",
   "keywords": [
     "auth0",
@@ -46,7 +46,7 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/hosamshahin/auth0-react.git"
+    "url": "https://github.com/hosamshahin/auth0-react.git"
   },
   "license": "MIT",
   "bugs": {
@@ -101,6 +101,6 @@
     }
   },
   "dependencies": {
-    "@hosamshahin/auth0-spa-js": "^1.13.6-3"
+    "@hosamshahin/auth0-spa-js": "1.13.6-6"
   }
 }

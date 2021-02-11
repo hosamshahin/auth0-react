@@ -23,9 +23,10 @@ const Auth0ProviderWithHistory = ({ children }) => {
       issuer={tokenIssuer}
       scope={scope}
       onRedirectCallback={onRedirectCallback}
-      audience={audience}
+      // audience={audience}
       backChannelUrl={backChannelUrl}
-      cacheLocation="localstorage"
+      // cacheLocation={"localstorage"}
+      useRefreshTokens={true}
     >
       {children}
     </Auth0Provider>

@@ -223,7 +223,8 @@ const Auth0Provider = (opts: Auth0ProviderOptions): JSX.Element => {
           const { appState } = await client.handleRedirectCallback();
           onRedirectCallback(appState);
         } else {
-          await client.checkSession();
+          // await client.checkSession();
+          client.loginWithRedirect();
         }
         const user = await client.getUser();
         dispatch({ type: 'INITIALISED', user });
